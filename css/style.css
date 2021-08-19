@@ -1,0 +1,222 @@
+body {
+    display: flexbox;
+    display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  align-items: center; 
+  -webkit-align-items: center;
+  margin: 0 auto;
+  padding: 5px;
+
+}
+
+/*h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Maven Pro', sans-serif;
+    border: rgb(43, 168, 226) solid 5px;
+    border-radius: 0px 0px 30px 0px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: blueviolet;
+    
+}
+*/
+
+h1.centerpiece {
+     text-align: center;
+    font-size: 40px;
+    font-family: 'Maven Pro', sans-serif;
+   
+    color: rgb(249, 128, 253); 
+    margin-top: 22%;
+    
+
+    }
+
+
+    h2 {
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        background-color: rgb(168, 236, 236);
+        padding: 100px;
+        margin-top: 130px;
+    
+    }
+    
+    h3 {
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        background-color: rgb(168, 236, 236);
+        padding: 100px;
+        margin-top: 20px;
+    
+    }
+
+    h4 {
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        background-color: rgb(168, 236, 236);
+        padding: 100px;
+        margin-top: 13px;
+    
+    }
+.Header {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    border: rgb(147, 248, 252) solid 15px;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 12px;
+   
+  
+}
+
+.Header1 {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+   place-content: center;
+   float: left;
+    
+  
+    border: rgb(209, 182, 235) solid 10px;
+    border-radius: 50%;
+   
+  
+}
+
+
+p {
+     text-align: center;
+width: px;
+float: left;
+
+}
+
+p.inspirert {
+    display: flexbox;
+     flex-direction:column;
+     columns: 4;
+     width: 600px;
+     text-align: left;
+     
+  
+
+}
+
+p.ALT {
+    font-size: 300%;
+    display: flexbox;
+    flex-direction: column;
+    columns: 1;
+
+}
+
+p.notere {
+    max-width: 300px;
+    text-align: left;
+    display: flexbox;
+    flex-direction: column;
+    columns: 2;
+}
+
+
+    p.avslutning {
+        display: flexbox;
+        flex-direction: column;
+        columns: 1;
+        max-width: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    position: relative;
+    overflow: hidden;
+    transition: background 400ms;
+    color: #fff;
+    background-color: #4196af;
+    padding: 1rem 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+   
+}
+
+
+
+/*
+The response of the image link isa immediate and calls for no attention to the button itself,
+it is the page that shows, therefore an interesting button does nothing
+Using position:relative allows us to use position:absolute
+on our ripple element, which we need to control its position. 
+Meanwhile, overflow: hidden prevents the ripple from exceeding the button's edges.
+Everything else is optional.
+*/
+
+span.ripple {
+    position: absolute; /* The absolute position we mentioned earlier */
+    border-radius: 50%;
+    transform: scale(4);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+/*o make our ripples circular, we’ve set the border-radius to 50%. 
+And to ensure each ripple emerges from nothing, we’ve set the default 
+scale to 0. Right now, we won’t be able to see anything because 
+we don’t yet have a value for the top, left, width, or height 
+properties; we’ll soon be injecting these properties with JavaScript.
+*/
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+
+    }
+}
+/*I changed the transfrom: scale from 2 to 6 so the ripple effect became visible,
+this also made it so it now reacts to where your trackers is yet again,
+this combined with changing the javascript from to up till
+
+/*Finally, we need JavaScript to dynamically set the position and size of our
+ ripples. The size should be based on the size of the button, while the 
+ position should be based on both the position of the button and of the cursor.
+ */
+ 
+
+.me {
+
+    background-color: rgb(113, 209, 233);
+    padding: 400px;
+    width: 300px;
+    height: 100%;
+}
